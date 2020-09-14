@@ -23,7 +23,7 @@ namespace SimpleCalculator
                 numOfInput++;
                 if (numOfInput == 1)
                 {
-                    Console.WriteLine("Please make you first desired operation");
+                    Console.WriteLine("Please make your first desired operation");
                     Console.WriteLine("Tips: #1 is the height and #2 is the base when using the triangle area calculator!");
                     Console.WriteLine("");
                 }
@@ -49,10 +49,12 @@ namespace SimpleCalculator
                     double secondNumber = inputConverter.ConvertInputToNumeric(Console.ReadLine());
 
                     Console.WriteLine("Please enter your desire operation " +
-                        "\nIf you're unusre of which operation to use enter '' or 'Help'");
+                        "\nIf you're unsure of which operation to use enter '' or 'Help'");
                     string operation = Console.ReadLine();
 
                     double result = calculatorEngine.Calculate(operation, firstNumber, secondNumber);
+
+                    //Program send the table of elements to show the user all the operations available
                     if (result == 0 || operation.ToLower().Equals("help"))
                         operation = Console.ReadLine();
 

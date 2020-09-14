@@ -1,4 +1,22 @@
-﻿Change 4
+﻿Change 1
+
+I've added a way for the program to ask for input again when the user as input the wrong or incorrect input. This should work for both first and second values as well as a little help tip for operations.
+
+-CC
+
+Change 2
+
+I've made it possible for the display to be humanly readable, every solution will always be written as follows: The value x plus/subract/multiply/divide by the value y is equal to z. This was possible by utilizing StringBuilder.
+
+I've also added a round option so every result is rounded after 2 decimals.
+
+-CC
+
+Change 3
+
+
+
+Change 4
 
 In the program, I added a function that allows the user to calculate the area of a triangle using the formula H*B/2
 I've added comments where changes has been made!
